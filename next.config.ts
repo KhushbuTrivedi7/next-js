@@ -8,3 +8,11 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+module.exports = {
+  experimental: {
+    serverActions: true, // if using
+    // Ensure Turbopack is NOT enabled
+    turbo: false,
+  },
+};
